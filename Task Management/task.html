@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/task.css">
+    <link rel="stylesheet" href="CSS/task-info.css">
+    <title>Task Management</title>
+    <link rel="icon" href="images/task.png" sizes="96x96" type="image/png">
+</head>
+<body>
+    <div class="card">
+        <h1 class="heading">Task Management</h1>
+
+        <form class="form">
+            <input type="text" class="task-title" placeholder="Task Title" required>
+            <input type="text" class="task-description" placeholder="Task Description" required>
+            <input type="text" class="task-due-date" placeholder="Task Due Date" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+            <button type="submit">Add Task</button>
+        </form>
+        
+        <div class="main-content">
+            <!-- Tasks Section -->
+            <div class="task-list css-task-list"></div>
+
+            <!-- Completed Tasks Section -->
+            <div class="completed-tasks">
+                <h2>Completed Tasks</h2>
+                <div class="completed-task-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+</html>

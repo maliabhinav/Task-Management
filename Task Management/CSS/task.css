@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: #EDF5E1;
+}
+
+.card{
+    background-image: linear-gradient(to right, #05386b, #006294, #008ca8, #00b5a6,#5cdb95);
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    max-width: 800px;
+}
+
+.form input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #05386B;
+    border-radius: 3px;
+}
+
+
+
+button{
+    padding: 11px 20px;
+    background-color: #05386B;
+    color: #EDF5E1;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background-color: #007BFF;
+}
+
+/* Media queries */
+@media (max-width: 1052px){
+    .card{
+        width: 850px;
+    }
+}
+
+@media (max-width: 900px){
+    .card{
+        width: 750px;
+    }
+}
+
+@media (max-width: 805px){
+    .card{
+        width: 650px;
+    }
+    .form{
+        width: 650px;
+    }
+}
+
+@media (max-width: 705px){
+    .card{
+        width: 550px;
+    }
+    .form{
+        width: 550px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 605px){
+    .card{
+        width: 450px;
+    }
+    .form{
+        width: 450px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 505px){
+    .card{
+        width: 400px;
+        padding: 10px;
+    }
+    .form{
+        width: 400px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 430px){
+    .card{
+        width: 350px; 
+    }
+    .form{
+        width: 350px;   
+    }
+}
+
+@media (max-width: 385px){
+    .card{
+        width: 310px; 
+    }
+    .form{
+        width: 310px;   
+    }
+}
